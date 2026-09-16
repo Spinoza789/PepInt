@@ -1,0 +1,48 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {chromium} from 'playwright';
+const base=process.env.ANATOMY_TEST_URL??'http://localhost:5173';
+fs.mkdirSync('artifacts',{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const errors=[];
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1100}});
+ page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ await page.goto(base);await page.waitForFunction(()=>document.querySelector('.scene')?.dataset.ready==='true');
+ const scene=page.locator('.scene');
+ await page.screenshot({path:'artifacts/anatomy.png',fullPage:true});
+ const box=await page.locator('canvas').boundingBox();await page.mouse.click(box.x+box.width*.53,box.y+box.height*.36);
+ await page.waitForFunction(()=>document.querySelector('.scene').dataset.selected==='heart');
+ await page.locator('#organ-select').selectOption('pancreas');await page.getByRole('button',{name:'Isolate selected organ',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('.scene').dataset.mode==='focus');await page.waitForTimeout(900);
+ assert.match(await scene.getAttribute('data-layers'),/organs/);
+ await page.screenshot({path:'artifacts/pancreas.png'});
+ await page.getByRole('button',{name:'Close organ information'}).click();await page.waitForFunction(()=>document.querySelector('.scene').dataset.mode==='normal');
+ await page.getByRole('checkbox',{name:'Torso muscles'}).check();await page.waitForTimeout(400);assert.match(await scene.getAttribute('data-layers'),/muscles/);
+ await page.screenshot({path:'artifacts/muscles.png'});
+ await page.getByRole('button',{name:'Through',exact:true}).click();await page.locator('#cut-depth').fill('0.7');await page.waitForTimeout(200);
+ await page.screenshot({path:'artifacts/cutaway.png'});
+ await page.getByRole('button',{name:'Normal',exact:true}).click();await page.getByRole('checkbox',{name:'Torso muscles'}).uncheck();
+ await page.locator('#shell-opacity').fill('1');await page.waitForTimeout(200);await page.screenshot({path:'artifacts/skin.png'});
+ await page.getByRole('button',{name:'Whole body',exact:true}).click();await page.waitForTimeout(900);await page.screenshot({path:'artifacts/whole-body.png'});
+ await page.getByRole('button',{name:'Reset experience',exact:true}).click();await page.waitForTimeout(900);
+ await page.locator('#pk-time').fill('10');await page.waitForFunction(()=>document.querySelector('.scene').dataset.time==='10.00');
+ await page.getByRole('combobox',{name:'Illustrative dose mode'}).selectOption('weekly');await page.getByRole('spinbutton',{name:'Educational half-life in days'}).fill('12');
+ await page.locator('#pk-time').fill('35.8');await page.waitForTimeout(200);assert.ok(Number.parseFloat(await page.locator('.timeline-reading small').textContent())>2);
+ await page.getByRole('button',{name:'Play timeline',exact:true}).click();await page.waitForTimeout(500);
+ await page.getByRole('button',{name:'Pause timeline',exact:true}).click();const stopped=await page.locator('#pk-time').inputValue();await page.waitForTimeout(400);assert.equal(await page.locator('#pk-time').inputValue(),stopped);
+ await page.getByRole('checkbox',{name:'Reduced motion'}).check();
+ await page.getByRole('button',{name:'Next pathway step',exact:true}).click();assert.match(await page.locator('.story-card h2').textContent(),/Absorption/);
+ await page.getByRole('button',{name:'Reset experience',exact:true}).click();assert.equal(await page.locator('#pk-time').inputValue(),'0');
+ await page.getByRole('button',{name:'Sources',exact:true}).click();assert.match(await page.locator('.sources-page').textContent(),/BodyParts3D/);
+	 await page.getByRole('button',{name:'Peptide',exact:true}).click();await page.waitForSelector('.molecular-stage');assert.match(await page.locator('.molecular-stage h1').textContent(),/peptide explorer/i);await page.waitForFunction(()=>document.querySelector('.molstar-host')?.dataset.ready==='true');assert.equal(await page.locator('.molecular-stage canvas').count(),1);
+	 await page.getByRole('button',{name:'Receptors',exact:true}).click();await page.waitForSelector('[role="tab"]');assert.equal(await page.locator('[role="tab"]').count(),3);await page.waitForFunction(()=>document.querySelector('.molecular-canvas')?.dataset.ready==='true');assert.equal(await page.locator('.molstar-host').getAttribute('data-pdb'),'8YWF');assert.equal(await page.locator('.molstar-host').getAttribute('data-interface'),'true');await page.getByRole('tab',{name:/GIPR/}).click();await page.waitForFunction(()=>document.querySelector('.molecular-canvas')?.dataset.ready==='true');assert.equal(await page.locator('.molstar-host').getAttribute('data-pdb'),'8YW4');await page.getByRole('button',{name:'Show binding concept'}).click();assert.equal(await page.getByText('Binding concept on').count(),1);await page.getByRole('tab',{name:/GCGR/}).click();await page.waitForFunction(()=>document.querySelector('.molecular-canvas')?.dataset.ready==='true');assert.equal(await page.locator('.molstar-host').getAttribute('data-pdb'),'6LMK');assert.match(await page.locator('.molecular-info').textContent(),/deposited 6LMK/i);await page.getByRole('button',{name:'Continue to whole-body anatomy'}).click();await page.waitForFunction(()=>document.querySelector('.scene')?.dataset.ready==='true');
+	 await page.getByRole('navigation',{name:'Experience sections'}).getByRole('button',{name:'Body',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.scene')?.dataset.ready==='true');
+ await page.getByRole('button',{name:'Guided peptide video',exact:true}).click();if(await page.getByRole('button',{name:'Pause video',exact:true}).count())await page.getByRole('button',{name:'Pause video',exact:true}).click();await page.locator('#guided-video-step').fill('6');await page.waitForTimeout(300);assert.match(await page.locator('.guided-video h2').textContent(),/Appetite and satiety/);assert.equal(await page.locator('.atlas-label').filter({hasText:'Brain'}).count(),1);await page.getByRole('button',{name:'Close guided video',exact:true}).click();
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(500);
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'No mobile horizontal overflow');
+ await page.screenshot({path:'artifacts/mobile.png',fullPage:true});
+ // Error path must show retry rather than an indefinitely empty scene.
+ const offline=await browser.newPage();await offline.route('**/anatomy/torso.bin*',route=>route.abort());await offline.goto(base);await offline.getByRole('button',{name:'Retry anatomy'}).waitFor();await offline.close();
+ assert.deepEqual(errors,[]);console.log('PASS: rendered skin/muscles/cutaway, ray selection, organ isolation/reset, accumulation, playback pause, reduced motion, story, sources, mobile, load failure.');
+}finally{await browser.close();}

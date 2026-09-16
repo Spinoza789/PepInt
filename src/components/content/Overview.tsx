@@ -1,0 +1,11 @@
+import {useExperienceStore} from '../../state/useExperienceStore';
+import type {ExperienceStage} from '../../lib/types';
+import {ArrowUpRight,Atom,Dna,HeartPulse,TimerReset} from 'lucide-react';
+export function Overview(){
+ const s=useExperienceStore();const stages:{stage:ExperienceStage;number:string;title:string;eyebrow:string;text:string;icon:typeof Atom}[]=[
+  {stage:'peptide',number:'01',title:'Read the peptide chain',eyebrow:'Deposited coordinates',text:'Inspect receptor-bound retatrutide coordinates in Mol* and choose how the observed peptide is represented.',icon:Dna},
+  {stage:'receptors',number:'02',title:'Follow receptor binding',eyebrow:'Conceptual membrane scene',text:'Compare GLP-1R, GIPR and GCGR contexts through a clear binding and signalling sequence.',icon:Atom},
+  {stage:'body',number:'03',title:'Inspect the body atlas',eyebrow:'Reference anatomy',text:'Reveal skin, vessels, organs and torso muscles, then isolate structures for a closer view.',icon:HeartPulse},
+  {stage:'halfLife',number:'04',title:'Track the time course',eyebrow:'Illustrative PK model',text:'Scrub relative concentration through 42 days and compare a single input with repeated inputs.',icon:TimerReset},
+ ];return <main className="overview-stage"><section className="overview-intro"><div className="panel-kicker">A GUIDED SCIENTIFIC STORY</div><h1>From peptide chain<br/>to whole-body context.</h1><p>Move through four connected scales. Experimental coordinates, reference anatomy and simplified animations are labelled by the evidence they represent.</p></section><ol className="overview-storyboard">{stages.map(({stage,number,title,eyebrow,text,icon:Icon})=><li key={stage}><button onClick={()=>s.setStage(stage)}><span className="overview-number">{number}</span><Icon size={22}/><span className="overview-eyebrow">{eyebrow}</span><h2>{title}</h2><p>{text}</p><span className="overview-open">Open scene <ArrowUpRight size={14}/></span></button></li>)}</ol><div className="overview-footnote"><p>Retatrutide is investigational. This experience does not predict patient outcomes, organ drug concentrations or treatment suitability.</p><button className="secondary-action" onClick={()=>s.setStage('sources')}>Sources and educational limitations</button></div></main>;
+}

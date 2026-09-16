@@ -1,0 +1,1255 @@
+{
+  "version": 1,
+  "bytes": 10831128,
+  "parts": [
+    {
+      "id": "skin",
+      "layer": "shell",
+      "style": "skin",
+      "organId": null,
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_skin"
+      ],
+      "vertexCount": 42092,
+      "indexCount": 252540,
+      "bounds": [
+        [
+          -0.4895615577697754,
+          -4.5910641954804987e-10,
+          -0.2225789725780487
+        ],
+        [
+          0.47776663303375244,
+          1.6663482189178467,
+          0.10662645101547241
+        ]
+      ],
+      "positions": 0,
+      "normals": 505104,
+      "indices": 1010208
+    },
+    {
+      "id": "lungs",
+      "layer": "organs",
+      "style": "lung",
+      "organId": "lungs",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_lingula_superior_bronchopulmonary_segment",
+        "VH_F_left_anterior_bronchopulmonary_segment",
+        "VH_F_left_apical_bronchopulmonary_segment",
+        "VH_F_left_posterior_bronchopulmonary_segment",
+        "VH_F_lingula_inferior_bronchopulmonary_segment",
+        "VH_F_left_superior_bronchopulmonary_segment",
+        "VH_F_left_posterior_basal_bronchopulmonary_segment",
+        "VH_F_left_anterior_basal_bronchopulmonary_segment",
+        "VH_F_left_lateral_basal_bronchopulmonary_segment",
+        "VH_F_left_medial_basal_bronchopulmonary_segment",
+        "VH_F_right_medial_basal_bronchopulmonary_segment",
+        "VH_F_right_posterior_basal_bronchopulmonary_segment",
+        "VH_F_right_anterior_basal_bronchopulmonary_segment",
+        "VH_F_right_lateral_basal_bronchopulmonary_segment",
+        "VH_F_right_superior_bronchopulmonary_segment",
+        "VH_F_right_medial_bronchopulmonary_segment",
+        "VH_F_right_lateral_bronchopulmonary_segmennt",
+        "VH_F_right_anterior_bronchopulmonary_segm",
+        "VH_F_right_apical_bronchopulmonary_segment",
+        "VH_F_right_posterior_bronchopulmonary_segment"
+      ],
+      "vertexCount": 5628,
+      "indexCount": 29820,
+      "bounds": [
+        [
+          -0.1304865926504135,
+          1.1618340015411377,
+          -0.15641936659812927
+        ],
+        [
+          0.12060581147670746,
+          1.384870171546936,
+          -0.0039057969115674496
+        ]
+      ],
+      "positions": 2020368,
+      "normals": 2087904,
+      "indices": 2155440
+    },
+    {
+      "id": "liver",
+      "layer": "organs",
+      "style": "liver",
+      "organId": "liver",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_capsule_of_the_liver"
+      ],
+      "vertexCount": 3369,
+      "indexCount": 19818,
+      "bounds": [
+        [
+          -0.1348661333322525,
+          1.0573478937149048,
+          -0.1400981992483139
+        ],
+        [
+          0.1122201681137085,
+          1.2272586822509766,
+          0.012357319705188274
+        ]
+      ],
+      "positions": 2274720,
+      "normals": 2315148,
+      "indices": 2355576
+    },
+    {
+      "id": "heart",
+      "layer": "organs",
+      "style": "heart",
+      "organId": "heart",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_left_cardiac_atrium",
+        "VH_F_left_ventricle",
+        "VH_F_right_cardiac_atrium",
+        "VH_F_right_ventricle"
+      ],
+      "vertexCount": 6980,
+      "indexCount": 40995,
+      "bounds": [
+        [
+          -0.03492063283920288,
+          1.183894395828247,
+          -0.10660556703805923
+        ],
+        [
+          0.10758949816226959,
+          1.2938077449798584,
+          -0.0051424503326416016
+        ]
+      ],
+      "positions": 2434848,
+      "normals": 2518608,
+      "indices": 2602368
+    },
+    {
+      "id": "pancreas",
+      "layer": "organs",
+      "style": "pancreas",
+      "organId": "pancreas",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_tail_of_pancreas",
+        "VH_F_body_of_pancreas",
+        "VH_F_ucinate_process1",
+        "VH_F_head_of_pancreas",
+        "VH_F_neck_of_pancreas"
+      ],
+      "vertexCount": 2644,
+      "indexCount": 14916,
+      "bounds": [
+        [
+          -0.05395494028925896,
+          1.0322997570037842,
+          -0.11208879202604294
+        ],
+        [
+          0.11807678639888763,
+          1.0888381004333496,
+          -0.02771533839404583
+        ]
+      ],
+      "positions": 2766348,
+      "normals": 2798076,
+      "indices": 2829804
+    },
+    {
+      "id": "gallbladder",
+      "layer": "organs",
+      "style": "gallbladder",
+      "organId": "gallbladder",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_gallbladder"
+      ],
+      "vertexCount": 816,
+      "indexCount": 4884,
+      "bounds": [
+        [
+          -0.08931174874305725,
+          1.0509533882141113,
+          -0.07164299488067627
+        ],
+        [
+          -0.04840186610817909,
+          1.0888792276382446,
+          -0.019629456102848053
+        ]
+      ],
+      "positions": 2889468,
+      "normals": 2899260,
+      "indices": 2909052
+    },
+    {
+      "id": "kidneys",
+      "layer": "organs",
+      "style": "kidney",
+      "organId": "kidneys",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_kidney_capsule_L",
+        "VH_F_kidney_capsule_R"
+      ],
+      "vertexCount": 3312,
+      "indexCount": 19848,
+      "bounds": [
+        [
+          -0.1087215319275856,
+          0.9705370664596558,
+          -0.139386385679245
+        ],
+        [
+          0.11316228657960892,
+          1.095393419265747,
+          -0.061940714716911316
+        ]
+      ],
+      "positions": 2928588,
+      "normals": 2968332,
+      "indices": 3008076
+    },
+    {
+      "id": "smallIntestine",
+      "layer": "organs",
+      "style": "intestine",
+      "organId": "smallIntestine",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_duodenum_superior",
+        "VH_F_duodenum_descending",
+        "VH_F_duodenum_ascending",
+        "VH_F_duodenum_horizontal",
+        "VH_F_jejenum",
+        "VH_F_ileum",
+        "VH_F_ileum_terminal"
+      ],
+      "vertexCount": 11043,
+      "indexCount": 64857,
+      "bounds": [
+        [
+          -0.08713378012180328,
+          0.8736768960952759,
+          -0.07816566526889801
+        ],
+        [
+          0.0744376927614212,
+          1.0908777713775635,
+          0.02182808890938759
+        ]
+      ],
+      "positions": 3087468,
+      "normals": 3219984,
+      "indices": 3352500
+    },
+    {
+      "id": "largeIntestine",
+      "layer": "organs",
+      "style": "colon",
+      "organId": "largeIntestine",
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_transverse_colon",
+        "VH_F_ascending_colon",
+        "VH_F_vermiform_appendix",
+        "VH_F_descending_colon",
+        "VH_F_caecum",
+        "VH_F_rectum",
+        "VH_F_sigmoid_colon"
+      ],
+      "vertexCount": 5773,
+      "indexCount": 32985,
+      "bounds": [
+        [
+          -0.1264546662569046,
+          0.7814794182777405,
+          -0.14650557935237885
+        ],
+        [
+          0.11682110279798508,
+          1.0763225555419922,
+          0.0469122976064682
+        ]
+      ],
+      "positions": 3611928,
+      "normals": 3681204,
+      "indices": 3750480
+    },
+    {
+      "id": "stomach",
+      "layer": "organs",
+      "style": "stomach",
+      "organId": "stomach",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ2564"
+      ],
+      "vertexCount": 852,
+      "indexCount": 5058,
+      "bounds": [
+        [
+          -0.0299230869859457,
+          1.0724012851715088,
+          -0.057964496314525604
+        ],
+        [
+          0.10974496603012085,
+          1.1888262033462524,
+          0.051538899540901184
+        ]
+      ],
+      "positions": 3882420,
+      "normals": 3892644,
+      "indices": 3902868
+    },
+    {
+      "id": "airway",
+      "layer": "organs",
+      "style": "airway",
+      "organId": null,
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_tracheal_cartilage",
+        "FJ2441",
+        "FJ2442",
+        "FJ2443",
+        "FJ2444",
+        "FJ2445",
+        "FJ2446",
+        "FJ2447",
+        "FJ2448",
+        "FJ2449",
+        "FJ2450",
+        "FJ2451",
+        "FJ2452",
+        "FJ2453",
+        "FJ2454",
+        "FJ2455",
+        "FJ2456",
+        "FJ2457",
+        "FJ2458",
+        "FJ2459",
+        "FJ2460",
+        "FJ2461",
+        "FJ2462",
+        "FJ2463",
+        "FJ2464",
+        "FJ2465",
+        "FJ2466",
+        "FJ2467",
+        "FJ2468",
+        "FJ2469",
+        "FJ2470",
+        "FJ2471",
+        "FJ2472",
+        "FJ2473",
+        "FJ2474",
+        "FJ2475",
+        "FJ2476",
+        "FJ2477",
+        "FJ2478",
+        "FJ2479",
+        "FJ2480",
+        "FJ2481",
+        "FJ2482",
+        "FJ2483",
+        "FJ2484",
+        "FJ2485",
+        "FJ2486",
+        "FJ2487",
+        "FJ2488",
+        "FJ2489",
+        "FJ2490",
+        "FJ2491",
+        "FJ2492",
+        "FJ2493",
+        "FJ2494",
+        "FJ2495",
+        "FJ2496",
+        "FJ2497",
+        "FJ2498",
+        "FJ2499",
+        "FJ2500",
+        "FJ2501",
+        "FJ2502",
+        "FJ2503",
+        "FJ2504",
+        "FJ2505",
+        "FJ2506",
+        "FJ2507",
+        "FJ2508",
+        "FJ2509",
+        "FJ2510",
+        "FJ2511",
+        "FJ2512",
+        "FJ2513",
+        "FJ2514",
+        "FJ2515",
+        "FJ2516",
+        "FJ2517",
+        "FJ2518",
+        "FJ2519",
+        "FJ2520",
+        "FJ2521",
+        "FJ2522",
+        "FJ2523",
+        "FJ2524",
+        "FJ2525",
+        "FJ2526",
+        "FJ2527",
+        "FJ2528",
+        "FJ2529",
+        "FJ2530",
+        "FJ2531",
+        "FJ2532",
+        "FJ2533",
+        "FJ2534",
+        "FJ2535",
+        "FJ2536",
+        "FJ2537",
+        "FJ2538",
+        "FJ2539",
+        "FJ2540"
+      ],
+      "vertexCount": 22782,
+      "indexCount": 105642,
+      "bounds": [
+        [
+          -0.09211321175098419,
+          1.1797739267349243,
+          -0.08913618326187134
+        ],
+        [
+          0.09712197631597519,
+          1.3991496562957764,
+          0.02700650319457054
+        ]
+      ],
+      "positions": 3923100,
+      "normals": 4196484,
+      "indices": 4469868
+    },
+    {
+      "id": "arteries",
+      "layer": "vessels",
+      "style": "artery",
+      "organId": null,
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_left_coronary_artery",
+        "VH_F_left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery",
+        "VH_F_right_coronary_artery",
+        "VH_F_pulmonary_artery_L",
+        "VH_F_pulmonary_artery_R",
+        "VH_F_aortic_arch",
+        "VH_F_ascending_aorta",
+        "VH_F_descending_aorta_a",
+        "VH_F_descending_aorta_b"
+      ],
+      "vertexCount": 6338,
+      "indexCount": 35400,
+      "bounds": [
+        [
+          -0.047763459384441376,
+          0.9606649279594421,
+          -0.13187435269355774
+        ],
+        [
+          0.08384391665458679,
+          1.3431273698806763,
+          -0.019167637452483177
+        ]
+      ],
+      "positions": 4892436,
+      "normals": 4968492,
+      "indices": 5044548
+    },
+    {
+      "id": "veins",
+      "layer": "vessels",
+      "style": "vein",
+      "organId": null,
+      "source": "Human Reference Atlas",
+      "sourceIds": [
+        "VH_F_pulmonary_vein_L_sup",
+        "VH_F_pulmonary_vein_R_inf",
+        "VH_F_pulmonary_vein_R_sup",
+        "VH_F_pulmonary_vein_L_inf",
+        "VH_F_coronary_sinus",
+        "VH_F_great_cardiac_vein",
+        "VH_F_superior_vena_cava",
+        "VH_F_inferior_vena_cava_a",
+        "VH_F_inferior_vena_cava_b"
+      ],
+      "vertexCount": 7205,
+      "indexCount": 41313,
+      "bounds": [
+        [
+          -0.05002301558852196,
+          0.94981449842453,
+          -0.10897425562143326
+        ],
+        [
+          0.08321157097816467,
+          1.3398586511611938,
+          -0.015061115846037865
+        ]
+      ],
+      "positions": 5186148,
+      "normals": 5272608,
+      "indices": 5359068
+    },
+    {
+      "id": "FJ1446",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1446"
+      ],
+      "vertexCount": 563,
+      "indexCount": 2178,
+      "bounds": [
+        [
+          -0.18813183903694153,
+          1.1369768381118774,
+          -0.05769629031419754
+        ],
+        [
+          -0.04992000013589859,
+          1.309270977973938,
+          0.07003486156463623
+        ]
+      ],
+      "positions": 5524320,
+      "normals": 5531076,
+      "indices": 5537832
+    },
+    {
+      "id": "FJ1446M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1446M"
+      ],
+      "vertexCount": 564,
+      "indexCount": 2166,
+      "bounds": [
+        [
+          0.04992000013589859,
+          1.1369768381118774,
+          -0.05769629031419754
+        ],
+        [
+          0.18813183903694153,
+          1.309270977973938,
+          0.07003486156463623
+        ]
+      ],
+      "positions": 5546544,
+      "normals": 5553312,
+      "indices": 5560080
+    },
+    {
+      "id": "FJ1447",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1447"
+      ],
+      "vertexCount": 917,
+      "indexCount": 2994,
+      "bounds": [
+        [
+          -0.20203247666358948,
+          1.266058087348938,
+          -0.0574599988758564
+        ],
+        [
+          -0.027470456436276436,
+          1.366941213607788,
+          0.003707229159772396
+        ]
+      ],
+      "positions": 5568744,
+      "normals": 5579748,
+      "indices": 5590752
+    },
+    {
+      "id": "FJ1447M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1447M"
+      ],
+      "vertexCount": 922,
+      "indexCount": 2994,
+      "bounds": [
+        [
+          0.027470456436276436,
+          1.266058087348938,
+          -0.0574599988758564
+        ],
+        [
+          0.20203247666358948,
+          1.366941213607788,
+          0.003707229159772396
+        ]
+      ],
+      "positions": 5602728,
+      "normals": 5613792,
+      "indices": 5624856
+    },
+    {
+      "id": "FJ1452",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1452"
+      ],
+      "vertexCount": 17145,
+      "indexCount": 73800,
+      "bounds": [
+        [
+          -0.14645592868328094,
+          0.8274611234664917,
+          -0.10108982026576996
+        ],
+        [
+          -0.0036177230067551136,
+          1.2432427406311035,
+          0.07520302385091782
+        ]
+      ],
+      "positions": 5636832,
+      "normals": 5842572,
+      "indices": 6048312
+    },
+    {
+      "id": "FJ1452M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1452M"
+      ],
+      "vertexCount": 17116,
+      "indexCount": 73800,
+      "bounds": [
+        [
+          0.0036177230067551136,
+          0.8274611234664917,
+          -0.1009572297334671
+        ],
+        [
+          0.14645592868328094,
+          1.2432427406311035,
+          0.07520302385091782
+        ]
+      ],
+      "positions": 6343512,
+      "normals": 6548904,
+      "indices": 6754296
+    },
+    {
+      "id": "FJ1459",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1459"
+      ],
+      "vertexCount": 7818,
+      "indexCount": 32478,
+      "bounds": [
+        [
+          -0.15016767382621765,
+          1.110489845275879,
+          -0.14209704101085663
+        ],
+        [
+          -0.060038886964321136,
+          1.3793586492538452,
+          0.015864240005612373
+        ]
+      ],
+      "positions": 7049496,
+      "normals": 7143312,
+      "indices": 7237128
+    },
+    {
+      "id": "FJ1459M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1459M"
+      ],
+      "vertexCount": 7810,
+      "indexCount": 32478,
+      "bounds": [
+        [
+          0.06003899127244949,
+          1.110489845275879,
+          -0.14209704101085663
+        ],
+        [
+          0.15016767382621765,
+          1.3793586492538452,
+          0.015864240005612373
+        ]
+      ],
+      "positions": 7367040,
+      "normals": 7460760,
+      "indices": 7554480
+    },
+    {
+      "id": "FJ1464",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1464"
+      ],
+      "vertexCount": 3278,
+      "indexCount": 10440,
+      "bounds": [
+        [
+          -0.19536192715168,
+          1.172627568244934,
+          -0.05843000113964081
+        ],
+        [
+          -0.005008192732930183,
+          1.3449516296386719,
+          0.07577240467071533
+        ]
+      ],
+      "positions": 7684392,
+      "normals": 7723728,
+      "indices": 7763064
+    },
+    {
+      "id": "FJ1464M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1464M"
+      ],
+      "vertexCount": 3271,
+      "indexCount": 10470,
+      "bounds": [
+        [
+          0.005008192732930183,
+          1.172627568244934,
+          -0.05843000113964081
+        ],
+        [
+          0.19536192715168,
+          1.3449516296386719,
+          0.07577240467071533
+        ]
+      ],
+      "positions": 7804824,
+      "normals": 7844076,
+      "indices": 7883328
+    },
+    {
+      "id": "FJ1467",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1467"
+      ],
+      "vertexCount": 545,
+      "indexCount": 2058,
+      "bounds": [
+        [
+          -0.23631712794303894,
+          1.2368348836898804,
+          -0.09738801419734955
+        ],
+        [
+          -0.15253783762454987,
+          1.3801945447921753,
+          -0.036762140691280365
+        ]
+      ],
+      "positions": 7925208,
+      "normals": 7931748,
+      "indices": 7938288
+    },
+    {
+      "id": "FJ1467M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1467M"
+      ],
+      "vertexCount": 544,
+      "indexCount": 2058,
+      "bounds": [
+        [
+          0.15253783762454987,
+          1.2367851734161377,
+          -0.09738801419734955
+        ],
+        [
+          0.23631712794303894,
+          1.3801945447921753,
+          -0.036763109266757965
+        ]
+      ],
+      "positions": 7946520,
+      "normals": 7953048,
+      "indices": 7959576
+    },
+    {
+      "id": "FJ1468",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1468"
+      ],
+      "vertexCount": 2121,
+      "indexCount": 4458,
+      "bounds": [
+        [
+          -0.21176376938819885,
+          1.235551357269287,
+          -0.06412855535745621
+        ],
+        [
+          -0.0920972004532814,
+          1.386333703994751,
+          -0.01930893026292324
+        ]
+      ],
+      "positions": 7967808,
+      "normals": 7993260,
+      "indices": 8018712
+    },
+    {
+      "id": "FJ1468M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1468M"
+      ],
+      "vertexCount": 2143,
+      "indexCount": 4500,
+      "bounds": [
+        [
+          0.0920972004532814,
+          1.235551357269287,
+          -0.06412855535745621
+        ],
+        [
+          0.21176376938819885,
+          1.386333703994751,
+          -0.01930893026292324
+        ]
+      ],
+      "positions": 8036544,
+      "normals": 8062260,
+      "indices": 8087976
+    },
+    {
+      "id": "FJ1513",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1513"
+      ],
+      "vertexCount": 1063,
+      "indexCount": 3084,
+      "bounds": [
+        [
+          -0.22784839570522308,
+          1.2195318937301636,
+          -0.13435663282871246
+        ],
+        [
+          -0.08645416051149368,
+          1.3708614110946655,
+          -0.06012459099292755
+        ]
+      ],
+      "positions": 8105976,
+      "normals": 8118732,
+      "indices": 8131488
+    },
+    {
+      "id": "FJ1513M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1513M"
+      ],
+      "vertexCount": 1078,
+      "indexCount": 3138,
+      "bounds": [
+        [
+          0.08645416051149368,
+          1.2195318937301636,
+          -0.13435663282871246
+        ],
+        [
+          0.22784945368766785,
+          1.3708614110946655,
+          -0.06012459099292755
+        ]
+      ],
+      "positions": 8143824,
+      "normals": 8156760,
+      "indices": 8169696
+    },
+    {
+      "id": "FJ1520",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1520"
+      ],
+      "vertexCount": 2787,
+      "indexCount": 7962,
+      "bounds": [
+        [
+          -0.15452945232391357,
+          1.0864605903625488,
+          -0.16081029176712036
+        ],
+        [
+          0.003351327031850815,
+          1.3739757537841797,
+          -0.0914452075958252
+        ]
+      ],
+      "positions": 8182248,
+      "normals": 8215692,
+      "indices": 8249136
+    },
+    {
+      "id": "FJ1520M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1520M"
+      ],
+      "vertexCount": 2752,
+      "indexCount": 7920,
+      "bounds": [
+        [
+          -0.003351327031850815,
+          1.0864605903625488,
+          -0.1608102023601532
+        ],
+        [
+          0.15452945232391357,
+          1.3739757537841797,
+          -0.0914452075958252
+        ]
+      ],
+      "positions": 8280984,
+      "normals": 8314008,
+      "indices": 8347032
+    },
+    {
+      "id": "FJ1521",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1521"
+      ],
+      "vertexCount": 2394,
+      "indexCount": 7854,
+      "bounds": [
+        [
+          -0.13607360422611237,
+          1.3716076612472534,
+          -0.129614919424057
+        ],
+        [
+          0.003627956844866276,
+          1.5364294052124023,
+          -0.03935980051755905
+        ]
+      ],
+      "positions": 8378712,
+      "normals": 8407440,
+      "indices": 8436168
+    },
+    {
+      "id": "FJ1521M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1521M"
+      ],
+      "vertexCount": 2380,
+      "indexCount": 7866,
+      "bounds": [
+        [
+          -0.003627956844866276,
+          1.3716076612472534,
+          -0.129614919424057
+        ],
+        [
+          0.13607360422611237,
+          1.5364294052124023,
+          -0.03935980051755905
+        ]
+      ],
+      "positions": 8467584,
+      "normals": 8496144,
+      "indices": 8524704
+    },
+    {
+      "id": "FJ1527",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1527"
+      ],
+      "vertexCount": 3264,
+      "indexCount": 10470,
+      "bounds": [
+        [
+          -0.10637432336807251,
+          0.8636313080787659,
+          -0.14582042396068573
+        ],
+        [
+          -0.00544133223593235,
+          1.2704261541366577,
+          -0.1024993285536766
+        ]
+      ],
+      "positions": 8556168,
+      "normals": 8595336,
+      "indices": 8634504
+    },
+    {
+      "id": "FJ1527M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1527M"
+      ],
+      "vertexCount": 3278,
+      "indexCount": 10470,
+      "bounds": [
+        [
+          0.00544133223593235,
+          0.8636313080787659,
+          -0.14582042396068573
+        ],
+        [
+          0.10640136152505875,
+          1.2704261541366577,
+          -0.1024993285536766
+        ]
+      ],
+      "positions": 8676384,
+      "normals": 8715720,
+      "indices": 8755056
+    },
+    {
+      "id": "FJ1554",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1554"
+      ],
+      "vertexCount": 1989,
+      "indexCount": 5880,
+      "bounds": [
+        [
+          -0.16977167129516602,
+          1.3348225355148315,
+          -0.1471589058637619
+        ],
+        [
+          0.004027618560940027,
+          1.4127708673477173,
+          -0.069435715675354
+        ]
+      ],
+      "positions": 8796936,
+      "normals": 8820804,
+      "indices": 8844672
+    },
+    {
+      "id": "FJ1554M",
+      "layer": "muscles",
+      "style": "muscle",
+      "organId": "muscle",
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1554M"
+      ],
+      "vertexCount": 1981,
+      "indexCount": 5886,
+      "bounds": [
+        [
+          -0.004027618560940027,
+          1.3348324298858643,
+          -0.1471589058637619
+        ],
+        [
+          0.16977167129516602,
+          1.4127708673477173,
+          -0.069435715675354
+        ]
+      ],
+      "positions": 8868192,
+      "normals": 8891964,
+      "indices": 8915736
+    },
+    {
+      "id": "ribcage",
+      "layer": "ribs",
+      "style": "bone",
+      "organId": null,
+      "source": "BodyParts3D",
+      "sourceIds": [
+        "FJ1504",
+        "FJ1504M",
+        "FJ1532",
+        "FJ1532M",
+        "FJ3153",
+        "FJ3178",
+        "FJ3225",
+        "FJ3226",
+        "FJ3227",
+        "FJ3228",
+        "FJ3229",
+        "FJ3230",
+        "FJ3231",
+        "FJ3232",
+        "FJ3233",
+        "FJ3234",
+        "FJ3235",
+        "FJ3236",
+        "FJ3237",
+        "FJ3239",
+        "FJ3242",
+        "FJ3245",
+        "FJ3248",
+        "FJ3251",
+        "FJ3254",
+        "FJ3255",
+        "FJ3279",
+        "FJ3290",
+        "FJ3330",
+        "FJ3331",
+        "FJ3332",
+        "FJ3333",
+        "FJ3334",
+        "FJ3335",
+        "FJ3336",
+        "FJ3337",
+        "FJ3338",
+        "FJ3339",
+        "FJ3340",
+        "FJ3341",
+        "FJ3342",
+        "FJ3343",
+        "FJ3344",
+        "FJ3345",
+        "FJ3346",
+        "FJ3347",
+        "FJ3348",
+        "FJ3362",
+        "FJ3384"
+      ],
+      "vertexCount": 42966,
+      "indexCount": 215166,
+      "bounds": [
+        [
+          -0.17311319708824158,
+          1.0407602787017822,
+          -0.14191582798957825
+        ],
+        [
+          0.1731225550174713,
+          1.4989378452301025,
+          0.07041703909635544
+        ]
+      ],
+      "positions": 8939280,
+      "normals": 9454872,
+      "indices": 9970464
+    }
+  ],
+  "sourceRepository": "https://github.com/ashemag/human-atlas",
+  "registration": [
+    1.04,
+    0,
+    0,
+    0,
+    0,
+    0.995,
+    0,
+    0,
+    0,
+    0,
+    0.97,
+    0,
+    0,
+    -0.04,
+    -0.04,
+    1
+  ],
+  "note": "Composite educational anatomy: HRA female skin/organs with registered BP3D male muscles, bones and stomach. Materials and crop are illustrative; not a validated registration."
+}
